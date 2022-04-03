@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --var-color-black: #1A1A40;
+  --var-color-navy: #270082;
+  --var-color-purple: #7A0BC0;
+  --var-color-pink: #FA58B6;
+  --var-font-roboto: 'Roboto';
+  --var-font-poppins: 'Poppins';
+}
+
+*{
+  color: var(--var-color-black);
+  font-family: var(--var-font-poppins);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--var-font-roboto);
+}
+
+.bg-black {
+  background-color: var(--var-color-black);
+}
+
+.bg-navy {
+  background-color: var(--var-color-navy);
+}
+
+.bg-purple {
+  background-color: var(--var-color-purple);
+}
+
+.bg-pink {
+  background-color: var(--var-color-pink);
+}
+
+.text-black {
+  color: var(--var-color-black);
+}
+
+.text-navy {
+  color: var(--var-color-navy);
+}
+
+.text-purple {
+  color: var(--var-color-purple);
+}
+
+.text-pink {
+  color: var(--var-color-pink);
+}
+
