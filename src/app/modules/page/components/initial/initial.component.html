@@ -1,33 +1,68 @@
 <div class="container-page bg-silver">
   <nav class="navbar navbar-light navbar-expand-lg bg-navy">
-      <h1 class="navbar-brand text-white ps-3">
-        Comfatex
-      </h1>
-      <ul class="nav justify-content-center w-100">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tienda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
-      <a class="navbar-brand text-white nav-link" [routerLink]="['/ingreso']" >Ingreso</a>
+    <h1 class="navbar-brand text-white ps-3">Comfatex</h1>
+    <ul class="nav justify-content-center w-100">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tienda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+    </ul>
+    <a class="navbar-brand text-white nav-link" [routerLink]="['/ingreso']"
+      >Ingreso</a
+    >
   </nav>
   <header class="bg-navy text-white">
     <div class="header-container">
       <div class="header-container-text">
         <h1 class="text-white">Moldea tu belleza</h1>
-        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo similique atque quod unde! Veniam sit aperiam commodi ratione aliquam iste ut incidunt quibusdam delectus quasi nostrum repellat, facere sint minus vel corporis rem consectetur cumque explicabo id autem eaque? Tempore beatae velit totam natus eius?</p>
+        <p class="text-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+          similique atque quod unde! Veniam sit aperiam commodi ratione aliquam
+          iste ut incidunt quibusdam delectus quasi nostrum repellat, facere
+          sint minus vel corporis rem consectetur cumque explicabo id autem
+          eaque? Tempore beatae velit totam natus eius?
+        </p>
       </div>
-      <img class="animate__animated animate__slideInRight" src="assets/imgs/fajas/FAJA-FITNESS.png" alt="">
+      <img
+        class="animate__animated animate__slideInRight"
+        src="assets/imgs/fajas/FAJA-FITNESS.png"
+        alt=""
+      />
     </div>
-    <img class="wave" src="assets/imgs/svg/wave.svg" alt="" srcset="">
+    <img class="wave" src="assets/imgs/svg/wave.svg" alt="" srcset="" />
   </header>
-  <div class="container">
-
-  </div>
+  <main class="container bg-white p-5 rounded-3 animate__animated animate__slideInUp">
+    <h1>Conoce nuestros tipos</h1>
+    <div class="d-flex justify-content-around">
+      <div class="view view-first">
+        <img src="https://m.media-amazon.com/images/I/71Zeh-G-y9L._AC_UX342_.jpg" />
+        <div class="mask">
+        <h2>Faja 1</h2>
+        <a href="#" class="info">Leer más</a>
+        </div>
+      </div>
+      <div class="view view-first">
+        <img src="https://m.media-amazon.com/images/I/6120uA8TQHL._AC_UY445_.jpg" />
+        <div class="mask">
+        <h2>Faja 2</h2>
+        <a href="#" class="info">Leer más</a>
+        </div>
+      </div>
+      <div class="view view-first">
+        <img src="https://m.media-amazon.com/images/I/61U4aQMf-qL._AC_UX385_.jpg" />
+        <div class="mask">
+        <h2>Faja 3</h2>
+        <a href="#" class="info">Leer más</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <img class="w-100" src="https://fajasatumedida.com/wp-content/uploads/2021/03/Banner-web-nuevo-3-scaled.jpg" alt="">
+  </main>
+  <app-footer></app-footer>
 </div>
-
