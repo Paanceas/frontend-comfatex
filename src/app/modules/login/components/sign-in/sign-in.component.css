@@ -2,11 +2,9 @@
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-
 }
 
-body{
-   
+main{
     background-color: rgb(25, 116, 158);
     width: 100vw;
     height: 100vh;
@@ -15,8 +13,6 @@ body{
     grid-gap: 7rem;
     padding: 0 2rem;
     align-items: center;
-   
-  
 }
 
 .row{
@@ -27,8 +23,8 @@ body{
 img{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    
 }
+
 .btn1{
     border: none;
     outline: none;
@@ -39,6 +35,7 @@ img{
     border-radius: 4px;
     font-weight: bold;
 }
+
 .btn1:hover{
     background-color: white;
     border: 1px solid;

@@ -1,14 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
+@import "~animate.css/animate.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./bootstrap-new.css";
 
 :root{
   --var-color-black: #1A1A40;
   --var-color-navy: #270082;
   --var-color-purple: #7A0BC0;
   --var-color-pink: #FA58B6;
+  --var-color-silver: #F3F4F5;
   --var-font-roboto: 'Roboto';
   --var-font-poppins: 'Poppins';
 }
@@ -16,6 +19,9 @@
 *{
   color: var(--var-color-black);
   font-family: var(--var-font-poppins);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -38,6 +44,10 @@ h1, h2, h3, h4, h5, h6{
   background-color: var(--var-color-pink);
 }
 
+.bg-silver {
+  background-color: var(--var-color-silver);
+}
+
 .text-black {
   color: var(--var-color-black);
 }
@@ -54,3 +64,36 @@ h1, h2, h3, h4, h5, h6{
   color: var(--var-color-pink);
 }
 
+.text-silver {
+  color: var(--var-color-silver);
+}
+
+a {
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  width: 80%;
+  margin: 0 10%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+a.active::after {
+  transform: scaleX(1);
+}
