@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light navbar-expand-lg bg-navy">
+  <h1 class="navbar-brand text-white ps-3">Comfatex</h1>
+  <ul class="nav justify-content-center w-100">
+    <li class="nav-item">
+      <a class="nav-link" [ngClass]="{'active': active=='Inicio'}" [routerLink]="['/page']">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/page/tienda']" [ngClass]="{'active': active=='Tienda'}">Tienda</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"[routerLink]="['/page/contacto']" [ngClass]="{'active': active=='Contacto'}">Contacto</a>
+    </li>
+  </ul>
+  <a class="navbar-brand text-white nav-link" [routerLink]="['/ingreso']"
+    >Ingreso</a
+  >
+</nav>

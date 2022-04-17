@@ -1,21 +1,5 @@
 <div class="container-page bg-silver">
-  <nav class="navbar navbar-light navbar-expand-lg bg-navy">
-    <h1 class="navbar-brand text-white ps-3">Comfatex</h1>
-    <ul class="nav justify-content-center w-100">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Tienda</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
-    </ul>
-    <a class="navbar-brand text-white nav-link" [routerLink]="['/ingreso']"
-      >Ingreso</a
-    >
-  </nav>
+  <app-nav></app-nav>
   <header class="bg-navy text-white">
     <div class="header-container">
       <div class="header-container-text">
@@ -43,21 +27,21 @@
         <img src="https://m.media-amazon.com/images/I/71Zeh-G-y9L._AC_UX342_.jpg" />
         <div class="mask">
         <h2>Faja 1</h2>
-        <a href="#" class="info">Leer más</a>
+        <a [routerLink]="['/page/tienda']" class="info">Leer más</a>
         </div>
       </div>
       <div class="view view-first">
         <img src="https://m.media-amazon.com/images/I/6120uA8TQHL._AC_UY445_.jpg" />
         <div class="mask">
         <h2>Faja 2</h2>
-        <a href="#" class="info">Leer más</a>
+        <a [routerLink]="['/page/tienda']" class="info">Leer más</a>
         </div>
       </div>
       <div class="view view-first">
         <img src="https://m.media-amazon.com/images/I/61U4aQMf-qL._AC_UX385_.jpg" />
         <div class="mask">
         <h2>Faja 3</h2>
-        <a href="#" class="info">Leer más</a>
+        <a [routerLink]="['/page/tienda']" class="info">Leer más</a>
         </div>
       </div>
     </div>
