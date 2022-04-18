@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "view": true,
+    "icon": "bx bx-user",
+    "active": false,
+    "name": "Usuarios",
+    "path": "/usuarios/consulta",
+    "roles": [
+      {
+        "name": "Administrador"
+      }
+    ],
+    "submenu": []
+  }
+]

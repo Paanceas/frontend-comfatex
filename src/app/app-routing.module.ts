@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'ingreso',
     loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
   },
+  {
+    path: 'comfatex',
+    loadChildren: () => import('./modules/principal/principal.module').then(m => m.PrincipalModule)
+  },
   { path: '', redirectTo:'/page', pathMatch:'full'},
   { path: '**', redirectTo:'/page', pathMatch:'full'}
 ];

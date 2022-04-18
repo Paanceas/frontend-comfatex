@@ -3,19 +3,27 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
+import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HeaderComponent,
+    SidebarComponent
   ],
   exports: [
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     RouterModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
 })
 export class GlobalModule { }

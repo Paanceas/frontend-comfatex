@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "./bootstrap-new.css";
+@import "styleDasboard.css";
 
 :root{
   --var-color-black: #1A1A40;
@@ -14,6 +15,18 @@
   --var-color-silver: #F3F4F5;
   --var-font-roboto: 'Roboto';
   --var-font-poppins: 'Poppins';
+  --nav-width: 92px;
+  /*===== Colores =====*/
+  --first-color: #ffef05;
+  --bg-color: #12192C;
+  --sub-color: #F6F6F6;
+  --white-color: #FFF;
+  --silver-color: #f7faff;
+  /*===== Fuente y tipografia =====*/
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  /*===== z index =====*/
+  --z-fixed: 100;
 }
 
 *{
@@ -97,10 +110,21 @@ a:hover::after {
 a.active::after {
   transform: scaleX(1);
 }
- a:hover .hover-white{
+ a:hover .hover-white,
+ button:hover .hover-white{
    color: #fff;
  }
 
  .img-max{
    height: 340px;
  }
+
+ .sidebar{
+  min-width: var(--nav-width);
+}
+.body{
+  min-width: calc(100vw - var(--nav-width));
+}
+.body-expander{
+  min-width: calc(100vw - calc(var(--nav-width) + 9.25rem)) !important;
+}
