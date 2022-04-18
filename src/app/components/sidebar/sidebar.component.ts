@@ -21,55 +21,6 @@ export class SidebarComponent implements OnInit {
   listSidebar:Sidebar[] = [];
 
   ngOnInit(): void {
-    this.listSidebar = this.valideModules();
-  }
-
-  ngAfterContentInit(): void {
-    this.showMenu();
-  }
-
-  showMenu(){
-    const navbar:any = document.getElementById('navbar');
-    navbar.classList.toggle('expander')
-    this.size.emit(navbar.classList.contains('expander'));
-  }
-
-  openSubmenu(id:number){
-    const collapseMenu:any = document.getElementById(`collapse__${id}`);
-    const ulMenu = collapseMenu.nextElementSibling;
-    ulMenu.classList.toggle('showCollapse')
-    collapseMenu.classList.toggle('rotate');
-    this.active(0);
-  }
-
-  active(id:number){
-    this.listSidebar.forEach(element => {
-      element.active = element.id === id ? true : false;
-    });
-  }
-
-  closeSession(){
-    this._router.navigate(["/inicio"]);
-    window.sessionStorage.clear();
-  }
-
-  valideModules(): Sidebar[]{
-    const u:UserResponse = this.util.getObj("usuario",true);
-    let newList:Sidebar[] = [];
-    if(u){
-      const list:Sidebar[] = modulos.default;
-
-      newList = list.filter((m)=>{
-        return m.roles.some((s:any) => s.name === u.roll);
-      });
-      newList.forEach((m:Sidebar) => {
-         m.submenu = m.submenu.filter((s:any)=>{
-          return s.roles.some((s:any) => s.name === u.roll);
-        })
-      });
-
-    }
-    return newList;
   }
 
 }

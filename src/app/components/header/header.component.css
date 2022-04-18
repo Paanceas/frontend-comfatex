@@ -4,6 +4,8 @@ header{
   display: flex;
   height: 80px;
   padding: 10px;
+  max-width: 100%;
+  box-sizing: content-box;
 }
 .image--cover {
   width: 50px;
