@@ -1,11 +1,10 @@
 <main>
-    <section class="Form my-4 mx-5">
+    <section class="Form mx-auto">
         <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-6 col-sm-12">
+            <div class="row">
                     <img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg"
-                        class="img-fluid" alt="">
-                </div>
+                     class="img-fluid col-lg-6 p-2" alt="">
+
                 <div class="col-lg-6 py-4">
                     <h1 class="font-weigth-bold py-3 col-lg-6 ">Inicio de sesión</h1>
                     <br>
@@ -28,8 +27,8 @@
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7 ">
-                            <p>¿No tiene una cuenta? <a href="#">Registrese aqui</a></p>
-                            <a href="#">¿Olvido su contraseña?</a>
+                            <p>¿No tiene una cuenta? <a [routerLink]="['/ingreso/registro']">Registrese aqui</a></p>
+                            <a [routerLink]="['/ingreso/recuperar']">¿Olvido su contraseña?</a>
                             </div>
                         </div>
                     </form>
