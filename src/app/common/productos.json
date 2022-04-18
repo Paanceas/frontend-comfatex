@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Faja 1",
+    "price": 50,
+    "sale": true,
+    "discount": 10,
+    "img": "https://modabycolombia.com/wp-content/uploads/2020/03/6231-Frente.jpg",
+    "code": "SBK-00211-1S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  },
+  {
+    "id": 2,
+    "name": "Faja 4",
+    "price": 50,
+    "sale": true,
+    "discount": 10,
+    "img": "https://cdn.shopify.com/s/files/1/2007/4083/products/Ref.O-015_1024x1024.png?v=1638838552",
+    "code": "SBK-00244-4S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  },
+  {
+    "id": 3,
+    "name": "Faja 3",
+    "price": 50,
+    "sale": false,
+    "discount": 10,
+    "img": "https://d2j6dbq0eux0bg.cloudfront.net/images/26904173/1405162902.jpg",
+    "code": "SBK-00233-3S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  },
+  {
+    "id": 4,
+    "name": "Faja 4",
+    "price": 50,
+    "sale": false,
+    "discount": 10,
+    "img": "https://corseterialaconchita.mx/wp-content/uploads/2021/10/2022-rosa-portada.png",
+    "code": "SBK-00244-4S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  },
+  {
+    "id": 5,
+    "name": "Faja 5",
+    "price": 90,
+    "sale": true,
+    "discount": 50,
+    "img": "http://cdn.shopify.com/s/files/1/0047/7190/5585/products/9152N-frente_1200x1200.jpg?v=1572289986",
+    "code": "SBK-00255-5S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  },
+  {
+    "id": 6,
+    "name": "Faja 6",
+    "price": 50,
+    "sale": false,
+    "discount": 10,
+    "img": "https://fajascollection.com/wp-content/uploads/2019/12/10-296x396.png",
+    "code": "SBK-00266-6S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  }
+]

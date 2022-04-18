@@ -97,3 +97,10 @@ a:hover::after {
 a.active::after {
   transform: scaleX(1);
 }
+ a:hover .hover-white{
+   color: #fff;
+ }
+
+ .img-max{
+   height: 340px;
+ }
