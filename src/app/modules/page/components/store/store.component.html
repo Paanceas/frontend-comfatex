@@ -1,9 +1,30 @@
 <div class="bg-silver">
-  <app-nav [active]="'Tienda'"></app-nav>
-  <main class="container bg-white p-5 mt-5 rounded-3 animate__animated animate__slideInUp">
+  <app-nav [active]="'Tienda'" class="animate__animated animate__slideInDown"></app-nav>
+  <div id="carouselExampleIndicators" class="carousel slide animate__animated animate__slideInDown" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- ngfor loop using get dynamic value and ngclass for add acive class -->
+      <div class="carousel-item" *ngFor="let result of data; let i = index" [ngClass]="{'active': i === 0}" data-bs-interval="3000">
+       <img class="img-max-vw" src={{result.img}} title={{result.title}} />
+      </div>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <main class="container bg-white p-5 mt-3 rounded-3 animate__animated animate__slideInUp">
     <h1>Bienvenidos a Comfatex</h1>
     <!-- Header-->
-    <header class="bg-navy py-5">
+    <header class="bg-navy py-1">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
           <h1 class="display-4 fw-bolder text-white">Tienda con estilo</h1>

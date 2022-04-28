@@ -12,6 +12,12 @@ export class StoreComponent implements OnInit {
 
   products:any[] = productos.default;
 
+  data = [
+    { img: "assets/imgs/carrusel/1.png", title: "Slide 1" },
+    { img: "assets/imgs/carrusel/2.png", title: "Slide 2" },
+    { img: "assets/imgs/carrusel/3.png", title: "Slide 3" }
+  ];
+
   ngOnInit(): void {
   }
 

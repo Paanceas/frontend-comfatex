@@ -127,6 +127,11 @@ a.active::after {
    height: 340px;
  }
 
+ .img-max-vw{
+   max-width: 100vw;
+ }
+
+
 .body{
   width: calc(100% - var(--nav-width) - 20px);
 }
