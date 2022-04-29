@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "./bootstrap-new.css";
 
-:root{
+:root {
   --var-color-black: #1A1A40;
   --var-color-navy: #270082;
   --var-color-purple: #7A0BC0;
@@ -24,20 +24,20 @@
   --z-fixed: 100
 }
 
-*{
+* {
   color: var(--var-color-black);
   font-family: var(--var-font-poppins);
   margin: 0px;
   padding: 0px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
-body{
+body {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--var-font-roboto);
 }
 
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6{
   color: var(--var-color-silver);
 }
 
-.h-100{
+.h-100 {
   min-height: 100vh;
 }
 
@@ -111,22 +111,44 @@ a:hover::after {
   transform: scaleX(1);
 }
 
-a.active{
+a.active {
   font-weight: 500;
 }
 
 a.active::after {
   transform: scaleX(1);
 }
- a:hover .hover-white,
- button:hover .hover-white{
-   color: #fff;
- }
 
- .img-max{
-   height: 340px;
- }
+a:hover .hover-white,
+button:hover .hover-white {
+  color: #fff;
+}
 
-.body{
+.img-max {
+  height: 340px;
+}
+
+.img-max-vw {
+  width: 100vw;
+}
+
+
+.body {
   width: calc(100% - var(--nav-width) - 20px);
+}
+
+.d-confatex-responsive {
+  display: none;
+}
+
+@media screen and (min-width: 1600px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 990px) {
+  .d-confatex-responsive {
+    display: block;
+  }
 }

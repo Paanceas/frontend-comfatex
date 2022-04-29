@@ -1,5 +1,5 @@
 footer {
-  padding: 7em 0;
+  padding: 2em 0;
   position: absolute;
   width: 100%;
 }
@@ -52,4 +52,15 @@ footer {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   position: relative;
+}
+
+
+@media (max-width: 460px) {
+  h2 a{
+    font-size: 20px;
+  }
+
+  .footer-07 .menu a, p, div  {
+    font-size: 12px;
+  }
 }
