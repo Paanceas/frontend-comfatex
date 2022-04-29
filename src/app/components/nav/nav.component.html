@@ -1,17 +1,66 @@
 <nav class="navbar navbar-light navbar-expand-lg bg-navy">
   <h1 class="navbar-brand text-white ps-3">Comfatex</h1>
-  <ul class="nav justify-content-center w-100">
+  <ul class="nav justify-content-center d-none d-lg-flex w-100">
     <li class="nav-item">
-      <a class="nav-link" [ngClass]="{'active': active=='Inicio'}" [routerLink]="['/page']">Inicio</a>
+      <a
+        class="nav-link"
+        [ngClass]="{ active: active == 'Inicio' }"
+        [routerLink]="['/page']"
+        >Inicio</a
+      >
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/page/tienda']" [ngClass]="{'active': active=='Tienda'}">Tienda</a>
+      <a
+        class="nav-link"
+        [routerLink]="['/page/tienda']"
+        [ngClass]="{ active: active == 'Tienda' }"
+        >Tienda</a
+      >
     </li>
     <li class="nav-item">
-      <a class="nav-link"[routerLink]="['/page/contacto']" [ngClass]="{'active': active=='Contacto'}">Contacto</a>
+      <a
+        class="nav-link"
+        [routerLink]="['/page/contacto']"
+        [ngClass]="{ active: active == 'Contacto' }"
+        >Contacto</a
+      >
     </li>
   </ul>
-  <a class="navbar-brand text-white nav-link" [routerLink]="['/ingreso']"
+  <a
+    class="navbar-brand text-white d-none d-lg-block nav-link"
+    [routerLink]="['/ingreso']"
     >Ingreso</a
   >
+  <!-- menu responsive -->
+  <input type="checkbox" id="active" />
+  <label for="active" class="menu-btn d-confatex-responsive"
+    ><span></span
+  ></label>
+  <label for="active" class="close d-confatex-responsive"></label>
+  <div class="wrapper d-confatex-responsive">
+    <ul>
+      <li>
+        <a [ngClass]="{ active: active == 'Inicio' }" [routerLink]="['/page']"
+          >Inicio</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/page/tienda']"
+          [ngClass]="{ active: active == 'Tienda' }"
+          >Tienda</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/page/contacto']"
+          [ngClass]="{ active: active == 'Contacto' }"
+          >Contacto</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="['/ingreso']">Ingreso</a>
+      </li>
+    </ul>
+  </div>
 </nav>

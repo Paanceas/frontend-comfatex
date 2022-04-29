@@ -15,10 +15,17 @@ header .wave {
 
 header .header-container {
   width: 60%;
-  margin: 0px 20%;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+header .header-container .header-container-text{
+  padding-top: 150px;
+}
+
+.img-header-w{
+  max-width: 400px;
 }
 
 .view {
@@ -143,3 +150,88 @@ header .header-container {
   -ms-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
+
+/* testimonial */
+.card {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.card:hover {
+  background-color: #eee
+}
+
+.ratings i {
+  color: orange
+}
+
+.testimonial-list {
+  list-style: none
+}
+
+.testimonial-list li {
+  margin-bottom: 20px
+}
+
+.testimonials-margin {
+  margin-top: -19px
+}
+
+@media (max-width: 1022px) {
+  header {
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 990px) {
+  header .header-container {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  header {
+    min-height: 19vh;
+  }
+
+  header .header-container .header-container-text{
+    padding-top: 50px;
+  }
+
+  .comfatex-flex-responsive {
+    flex-wrap: wrap;
+  }
+
+  .comfatex-flex-responsive div {
+    width: 100%;
+    height: 300px;
+  }
+
+  .container {
+    margin-top: 66px
+  }
+
+  .view-first a.info {
+    margin-top: 20%;
+  }
+
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  header .header-container .header-container-text{
+    padding-top: 20px;
+  }
+
+}
+
