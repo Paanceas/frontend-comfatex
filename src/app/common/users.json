@@ -1,0 +1,47 @@
+[
+  {
+    "id":1,
+    "full_name": "asd asd",
+    "first_name": "asd",
+    "last_name": "asd",
+    "rol": "Admin",
+    "state": "inactivo",
+    "date_create": "01/01/2020"
+  },
+  {
+    "id":2,
+    "full_name": "Pablo Ceballos",
+    "first_name": "Pablo",
+    "last_name": "Ceballos",
+    "rol": "Admin",
+    "state": "activo",
+    "date_create": "01/01/2020"
+  },
+  {
+    "id":3,
+    "full_name": "Ian Cruz",
+    "first_name": "Ian",
+    "last_name": "Cruz",
+    "rol": "Vendedor",
+    "state": "activo",
+    "date_create": "01/01/2020"
+  },
+  {
+    "id":4,
+    "full_name": "Tatiana Peralta",
+    "first_name": "Tatiana",
+    "last_name": "CebaPeraltallos",
+    "rol": "Vendedor",
+    "state": "suspendido",
+    "date_create": "01/01/2020"
+  },
+  {
+    "id":5,
+    "full_name": "Justin Cruz",
+    "first_name": "Justin",
+    "last_name": "Cruz",
+    "rol": "Vendedor",
+    "state": "activo",
+    "date_create": "01/01/2020"
+  }
+]

@@ -9,20 +9,21 @@ import { Util } from 'src/app/common/util';
 })
 export class HeaderComponent implements OnInit {
 
-  private util:Util = new Util();
-  nickname:string = "";
-  rol:string = "";
-  search:string = "";
+  private util: Util = new Util();
+  nickname: string = "";
+  rol: string = "";
+  search: string = "";
 
-  constructor(private _router:Router) { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
     this.getUser();
+    console.log('entre')
   }
-
-  private getUser(){
-    const u:any = this.util.getObj("usuario",true);
-    if(!u){
+  private getUser() {
+    const u: any = this.util.getObj("usuario", true);
+    console.log("🚀 ~ file: header.component.ts ~ line 25 ~ HeaderComponent ~ getUser ~ u", u)
+    if (!u) {
       this._router.navigate(["/page"]);
       return;
     }
@@ -30,8 +31,8 @@ export class HeaderComponent implements OnInit {
     this.rol = u.roll;
   }
 
-  goToSearch(){
-    if(this.search && this.search.length > 2){
+  goToSearch() {
+    if (this.search && this.search.length > 2) {
       // this._router.navigate(["/comfatex/consulta",this.search]);
       this.search = "";
     }

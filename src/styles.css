@@ -21,11 +21,13 @@
   --first-color-light: #AFA5D9;
   --white-color: #F7F6FB;
   --normal-font-size: 1rem;
-  --z-fixed: 100
+  --z-fixed: 100;
+
+  --main-color1: #eb4d4b;
+  --text-color: #131e2c;
 }
 
 * {
-  color: var(--var-color-black);
   font-family: var(--var-font-poppins);
   margin: 0px;
   padding: 0px;
@@ -81,6 +83,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--var-color-silver);
 }
 
+.text-left {
+  text-align: left !important;
+}
+
 .h-100 {
   min-height: 100vh;
 }
@@ -134,7 +140,7 @@ button:hover .hover-white {
 
 
 .body {
-  width: calc(100% - var(--nav-width) - 20px);
+  width: calc(100% - var(--nav-width));
 }
 
 .d-confatex-responsive {

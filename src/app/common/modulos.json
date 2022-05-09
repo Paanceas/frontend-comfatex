@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "view": true,
+    "icon": "bx bx-grid-alt",
+    "active": true,
+    "name": "Dashboard",
+    "path": "/comfatex"
+  },
+  {
+    "id": 2,
     "icon": "bx bx-user",
-    "active": false,
+    "active": true,
     "name": "Usuarios",
-    "path": "/usuarios/consulta",
-    "roles": [
-      {
-        "name": "Administrador"
-      }
-    ],
-    "submenu": []
+    "path": "/comfatex/users"
   }
 ]

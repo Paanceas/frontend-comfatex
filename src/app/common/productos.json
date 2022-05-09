@@ -58,5 +58,25 @@
     "img": "https://fajascollection.com/wp-content/uploads/2019/12/10-296x396.png",
     "code": "SBK-00266-6S",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  },
+  {
+    "id": 7,
+    "name": "Faja 4",
+    "price": 50,
+    "sale": true,
+    "discount": 10,
+    "img": "https://cdn.shopify.com/s/files/1/2007/4083/products/Ref.O-015_1024x1024.png?v=1638838552",
+    "code": "SBK-00244-4S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
+  },
+  {
+    "id": 8,
+    "name": "Faja 4",
+    "price": 15200,
+    "sale": true,
+    "discount": 25,
+    "img": "https://cdn.shopify.com/s/files/1/2007/4083/products/Ref.O-015_1024x1024.png?v=1638838552",
+    "code": "SBK-00244-4S",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?"
   }
 ]

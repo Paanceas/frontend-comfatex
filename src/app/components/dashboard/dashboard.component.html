@@ -1,0 +1,38 @@
+<div id="body-pd">
+  <header class="header" id="header">
+    <div class="header_toggle">
+      <i class="bx bx-menu" id="header-toggle"></i>
+    </div>
+    <div class="d-flex justify-content-end w-25">
+      <div class="mx-4">
+        <h4 class="mb-0">{{nickname}}</h4>
+        <span>{{rol}}</span>
+      </div>
+      <img src="./assets/img/user.svg" alt="" width="45" class="image--cover" />
+    </div>
+  </header>
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div>
+        <a  class="nav_logo">
+          <i class="bx bx-closet nav_logo-icon"></i>
+          <span class="nav_logo-name">Comfatex</span>
+        </a>
+        <div class="nav_list">
+          <a  class="nav_link" [routerLink]="[item.path]" [ngClass]="{ active: active == item.name }" *ngFor="let item of modulos">
+            <i class="{{item.icon}} nav_icon" [ngClass]="{ 'active-white': active == item.name }"></i>
+            <span class="nav_name" [ngClass]="{ 'active-white': active == item.name }">{{item.name}}</span>
+          </a>
+        </div>
+      </div>
+      <a  class="nav_link">
+        <i class="bx bx-log-out nav_icon"></i>
+        <span class="nav_name">Salir</span>
+      </a>
+    </nav>
+  </div>
+  <!--Container Main start-->
+  <div class="height-100 bg-light comfatex-main">
+    <ng-content></ng-content>
+  </div>
+</div>
